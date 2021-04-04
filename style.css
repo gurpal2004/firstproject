@@ -1,0 +1,289 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.header{
+    /* background-image: url(./images/bg2.jpg); */
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+.overlay{
+    position: relative;
+    width: 100%;
+    height: 100%;
+ object-fit: contain;
+   background-image: url(./images/bg9.png);
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* max-height: 50px;
+    background-color: rgb(255, 255, 255); */
+
+}
+.bar ,.login, .logo{
+    padding: 1rem;
+}
+i.fa.fa-bars{
+    font-size: 2rem;
+    color: royalblue;
+}
+.login-btn{
+height: 2rem;
+    width: 6rem;
+ background:#fff;
+ color: royalblue;
+ border: 2px solid royalblue;
+ border-radius: 1rem;
+ font-size: 1.2rem;
+ letter-spacing: .9px;
+ outline: none;
+ transition: .6s;
+
+}
+.login-btn:hover{
+    background: royalblue;
+ color: white;
+ border-style: none;
+ cursor: pointer;
+ box-shadow: 8px 8px 7px rgb(46, 54, 77);
+}
+.main-header{
+    display: flex;
+    height:92vh;
+    
+}
+.heading{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5rem;
+    max-width: 40rem;
+    flex-direction: column;
+}
+
+
+.main-heading{
+  
+    position: relative;
+    font-size: 3rem;
+    color: royalblue;
+    margin: 0;
+    
+    font-family: 'Dela Gothic One', cursive;
+}
+.side-heading{
+    color: white;
+    padding-left: 5rem;
+    font-size: 2rem;
+}
+
+.writing{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; 
+    display: inline-block;
+    position: relative;
+    font-size: 3rem;
+   color: transparent;
+    -webkit-text-stroke: 0.1vw royalblue;
+
+}
+.writing::before{
+  content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    color: royalblue;
+    -webkit-text-stroke: 0vw royalblue;
+    border-right: 2px solid royalblue;
+    overflow: hidden;
+animation: animate 4s linear infinite;
+
+
+}
+@keyframes animate {
+    0%,10%,100%{
+        width: 0;
+    
+    }
+    30%,50%,70%,90%{
+        width: 100%;
+       
+    }
+    
+}
+
+.arrow-container{
+    display: flex;
+    height: 50%;
+    align-items: center;
+  
+}
+.arrow{  
+    width: 15rem;
+
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+   
+
+    overflow: hidden;
+
+}
+.main-form{
+
+    height: 50%;
+    width: 20rem;
+    background-color:#fff;
+    position: relative;
+    padding: 2.5rem 0;
+    box-shadow: 0 1px 1.5rem rgba(0,0,0,0.1);
+    border-radius: 1rem;
+   
+}
+.main-form::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+    background: linear-gradient(to left,#3986eb,#0d9ed8);
+    border-bottom-right-radius:100% ;
+    border-bottom-left-radius: 100%;
+}
+
+.form-heading{
+    color: red;
+    font-size: 2.5rem;
+   
+   
+
+}
+form{
+    background-color: rgba(55, 46, 85, 0.6);
+    transform: translateX(10rem);
+    padding: 2rem 0;
+    border-radius: 1rem;
+    box-shadow: 0 1px 1.5rem rgba(0,0,0,0.1);
+}
+.input-group{
+    width: 90%;
+    margin:0 auto;
+    position: relative;
+    display: flex;
+    align-items: baseline;
+
+
+}
+.input-group input{
+    position: relative;
+    width: 100%;
+    padding: 1rem 0;
+    margin-top: 0.2rem;
+    outline: none;
+    border:none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: #dfdb10;
+}
+
+
+.input-group >i {
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: rgb(221, 224, 28);
+
+}
+.input-group .bar{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color:rgba(0,0,0,0.1);
+    width: 100%;
+    height: 1px;
+    padding: 1px;
+
+}
+.input-group .bar::before{
+    content: "";
+    position: absolute;
+    background-color: #eed80e;
+    width: 0;
+    height: 1px;
+    transition: width 650ms;
+}
+.input-group input:focus+ .bar::before{
+    width: 100%;
+}
+.input-group button{
+    margin:1rem auto;
+    padding: 1rem 2rem;
+    background-color:linear-gradient(to left,#fc6767, #ec008c);
+    border:none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 3rem;
+
+}
+.input-group button:focus,
+.input-group button:hover
+{
+    background-color:linear-gradient(to right,#fc6767, #ec008c);
+
+}
+.switch-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.switch-login a{
+    text-decoration: none;
+    color: #e6dec5;
+    font-size: 1.3rem;
+}
+
+.switch-login a span{
+    color: #fc6767;
+    transition: .4s;
+}
+.switch-login a span:hover{
+    color: #fc6767;
+    padding-bottom: 2px;
+    border-bottom: 2px solid #fc6767;
+}
+.fa.fa-telegram{
+   font-size: 3rem;
+   position: relative;
+    color: royalblue;
+}
+.input-group-btn,.telegram{
+    height: 3rem;
+    width: 3rem;
+    padding: 0;
+    margin: 0; 
+    border-radius: 50%;
+    border-style: none;
+    outline: none;
+}
+.input-btn{
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
