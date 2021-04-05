@@ -1,0 +1,158 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+ background: #121212;
+}
+.tmp{
+ background: #121212;
+ height:90vh;
+ width: 100%;
+}
+
+
+.club{
+	display: flex;
+	height: 400px;
+	background: #ae00f8;
+	background-image: url(./images/ef2.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+}
+.club1,.club2{
+	width: 50%;
+	height: 400px;
+}
+.club1,.club2{
+	display: flex;
+	padding-left: 4%;
+	padding-right:3%;
+	justify-content: center;
+	flex-direction: column;
+}
+.club-title{
+	font-size: 1.2rem;
+	margin-bottom: 20PX;
+}
+.club-head{
+	font-size: 2.7rem;
+	font-family: sans-serif;
+	font-weight: bold;
+}
+.club-input-label{
+	width: 50%;
+}
+.club-input{
+	width: 40%;
+	padding: 10px;
+	font-size: 1rem;
+	border-radius: 10px;
+	border-bottom-right-radius: 0PX;
+	border-top-right-radius: 0px;
+	outline: none;	
+	border:1px solid royalblue;
+}
+.club-btn{
+	font-size: 1rem;
+	color: white;
+	background: royalblue;
+	height: 100%;
+	padding: 4px;
+	border-radius: 0px;
+	border-bottom-right-radius: 10PX;
+	border-top-right-radius: 10px;
+	outline: none;
+	border: 1px solid royalblue;
+
+}
+
+
+
+
+
+
+
+.footer
+{
+	height: 90px;
+	background: white;
+	padding-left: 7%;
+	padding-right: 7%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-shadow: 5px 0px 5px royalblue;
+}
+.f1,.f2,.f3{
+  width: 25%;
+  display:flex;
+  font-size: 19px;
+  justify-content: ;
+  align-items: center;	
+}
+.f2{
+	justify-content: space-around;
+
+}
+.f3{
+    justify-content: flex-end;
+}
+.hire-btn{
+	background: royalblue;
+	outline: none;
+  font-size: 11px;
+   margin-left: 5px;
+	border-radius: 16px;
+	color: white;
+	padding: 10px;
+	border:2px solid royalblue;
+	box-shadow: 0 0 3px royalblue;
+}
+.hire-btn:hover{
+    background: ;
+    box-shadow: 0 0 10px royalblue;
+}
+.social-logo{
+
+	color: royalblue;	
+	font-size: 90px;
+
+}
+@media only screen and (max-width: 600px) {
+  .f1,.f2,.f3{
+  	width: 50%;
+  }
+  .social-icons{
+  
+  }
+  .f3{
+  	display: none;
+  }
+  .club{
+  	flex-direction: column;
+  	height: 600px;
+  }
+  .club1,.club2{
+  	width: 96%;
+  	padding: 2%;
+  	justify-content: center;
+  	align-items: center;
+  }
+  .club2{
+  	height:150px;	
+  	justify-content: center;
+  	align-items: center;
+  }
+  .club-input-label{
+  	width: 75%;
+  }
+  .club-head{
+  	text-align: center;
+  }
+  .club-input-box{
+  	display: flex;
+  	justify-content: center;
+  }
+}
